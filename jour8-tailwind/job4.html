@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de Compte</title>
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+<!-- Header -->
+<header class="bg-blue-500 text-white p-4 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Nad</h1>
+        <ul class="flex space-x-4">
+            <li><a href="job1.html" class="hover:underline">Accueil</a></li>
+            <li><a href="job1.html" class="hover:underline">Inscription</a></li>
+            <li><a href="job1.html" class="hover:underline">Connexion</a></li>
+            <li><a href="job1.html" class="hover:underline">Rechercher</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Formulaire de création de compte -->
+<main class="container mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg">
+    <h2 class="text-xl font-bold mb-4">Créer un Compte</h2>
+    <form action="#" method="POST" class="space-y-4">
+
+        <!-- Civilité -->
+        <div>
+            <span class="font-medium">Civilité :</span>
+            <label class="ml-4">
+                <input type="radio" name="civilite" value="monsieur" class="mr-2"> Monsieur
+            </label>
+            <label class="ml-4">
+                <input type="radio" name="civilite" value="madame" class="mr-2"> Madame
+            </label>
+        </div>
+
+        <!-- Prénom, Nom et Adresse -->
+        <div>
+            <label for="prenom" class="block font-medium">Prénom</label>
+            <div class="relative">
+                <input type="text" id="prenom" name="prenom" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Prénom">
+                <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <div>
+            <label for="nom" class="block font-medium">Nom</label>
+            <div class="relative">
+                <input type="text" id="nom" name="nom" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Nom">
+                <i class="fas fa-user absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <div>
+            <label for="adresse" class="block font-medium">Adresse</label>
+            <div class="relative">
+                <input type="text" id="adresse" name="adresse" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Adresse">
+                <i class="fas fa-map-marker-alt absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email" class="block font-medium">Adresse Email</label>
+            <div class="relative">
+                <input type="email" id="email" name="email" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Email">
+                <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Mot de Passe et Validation -->
+        <div>
+            <label for="password" class="block font-medium">Mot de Passe</label>
+            <div class="relative">
+                <input type="password" id="password" name="password" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Mot de Passe">
+                <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <div>
+            <label for="password-confirm" class="block font-medium">Confirmez le Mot de Passe</label>
+            <div class="relative">
+                <input type="password" id="password-confirm" name="password-confirm" class="border border-gray-300 rounded-lg w-full p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-lg" placeholder="Confirmez le Mot de Passe">
+                <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- Passions -->
+        <div>
+            <span class="font-medium">Passions :</span>
+            <label class="ml-4">
+                <input type="checkbox" name="passions" value="informatique" class="mr-2"> Informatique
+            </label>
+            <label class="ml-4">
+                <input type="checkbox" name="passions" value="voyages" class="mr-2"> Voyages
+            </label>
+            <label class="ml-4">
+                <input type="checkbox" name="passions" value="sport" class="mr-2"> Sport
+            </label>
+            <label class="ml-4">
+                <input type="checkbox" name="passions" value="lecture" class="mr-2"> Lecture
+            </label>
+        </div>
+
+        <!-- Bouton de validation -->
+        <button type="submit" class="bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 shadow-lg focus:outline-none">Créer le Compte</button>
+    </form>
+</main>
+
+<!-- Footer -->
+<footer class="bg-pink-200 text-gray-700 p-4 mt-8">
+    <div class="container mx-auto text-center">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="job1.html" class="hover:underline">Accueil</a></li>
+            <li><a href="job1.html" class="hover:underline">Inscription</a></li>
+            <li><a href="job1.html" class="hover:underline">Connexion</a></li>
+            <li><a href="job1.html" class="hover:underline">Rechercher</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- CDN Font Awesome (pour les icônes) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

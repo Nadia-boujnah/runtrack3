@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Showcase Tailwind</title>
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- Header (Navigation) -->
+<header class="bg-blue-600 text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Nad</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:underline">Accueil</a></li>
+            <li><a href="#" class="hover:underline">Nos Produits</a></li>
+            <li><a href="#" class="hover:underline">Services</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Section (Hero) -->
+<section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Bienvenu sur notre site de vente de boissons</h2>
+        <p class="text-xl mb-6">Explorez nos produits </p>
+        <a href="#produits" class="bg-white text-blue-600 py-2 px-6 rounded-lg hover:bg-gray-100">Découvrez Nos Boissons</a>
+    </div>
+</section>
+
+<!-- Section des Cartes -->
+<section id="produits" class="container mx-auto py-12">
+    <h2 class="text-2xl font-bold text-center mb-8">Nos boissons chaudes</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Carte 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img src="café court.jpg" alt="Produit 1" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Café court</h3>
+            <p class="text-gray-700 mt-2">concentré de saveurs et d'arômes qui offre une expérience intense et rapide.</p>
+            <a href="#" class="text-blue-500 mt-4 inline-block">En savoir plus &rarr;</a>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img src="cappuccino.jpg" alt="Produit 2" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">cappuccino</h3>
+            <p class="text-gray-700 mt-2">Le cappuccino est une boisson à base d'espresso, de lait chaud et de mousse de lait, qui se distingue par son équilibre parfait entre douceur et intensité.</p>
+            <a href="#" class="text-blue-500 mt-4 inline-block">En savoir plus &rarr;</a>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img src="chocolatchaud.jpg" alt="Produit 3" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Chocolat chaud</h3>
+            <p class="text-gray-700 mt-2">Le chocolat chaud est une boisson réconfortante et douce, idéale pour les journées froides. Préparé en faisant fondre du chocolat dans du lait chaud, il offre une texture crémeuse et un goût riche, sucré et velouté.</p>
+            <a href="#" class="text-blue-500 mt-4 inline-block">En savoir plus &rarr;</a>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <img src="menthe.jpg" alt="Produit 4" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Infusion menthe</h3>
+            <p class="text-gray-700 mt-2">L'infusion de menthe est une boisson rafraîchissante et apaisante, idéale pour favoriser la digestion et se détendre.</p>
+            <a href="#" class="text-blue-500 mt-4 inline-block">En savoir plus &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Nad. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>

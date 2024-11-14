@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job 04 - Formulaire de Création de Compte</title>
+    <!-- Materialize CSS version 1.0.0 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav class="nav-wrapper blue">
+        <div class="container">
+            <a href="index.html" class="brand-logo">Nad</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Formulaire de création de compte -->
+<div class="container">
+    <h3 class="center-align">Formulaire de Création de Compte</h3>
+    <form action="#" method="post">
+
+        <!-- Civilité -->
+        <p>Civilité :</p>
+        <p>
+            <label>
+                <input name="civilite" type="radio" value="Monsieur" />
+                <span>Monsieur</span>
+            </label>
+            <label>
+                <input name="civilite" type="radio" value="Madame" />
+                <span>Madame</span>
+            </label>
+        </p>
+
+        <!-- Prénom avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input id="prenom" type="text" name="prenom" required>
+            <label for="prenom">Prénom</label>
+        </div>
+
+        <!-- Nom avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input id="nom" type="text" name="nom" required>
+            <label for="nom">Nom</label>
+        </div>
+
+        <!-- Adresse avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">home</i>
+            <input id="adresse" type="text" name="adresse" required>
+            <label for="adresse">Adresse</label>
+        </div>
+
+        <!-- Email avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" name="email" required>
+            <label for="email">Adresse Email</label>
+        </div>
+
+        <!-- Mot de passe avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">lock</i>
+            <input id="password" type="password" name="password" required>
+            <label for="password">Mot de Passe</label>
+        </div>
+
+        <!-- Validation du mot de passe avec icône -->
+        <div class="input-field">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="password_confirmation" type="password" name="password_confirmation" required>
+            <label for="password_confirmation">Confirmez le Mot de Passe</label>
+        </div>
+
+        <!-- Passions -->
+        <p>Passions :</p>
+        <p>
+            <label>
+                <input type="checkbox" name="passions[]" value="informatique" />
+                <span>Informatique</span>
+            </label>
+            <label>
+                <input type="checkbox" name="passions[]" value="voyages" />
+                <span>Voyages</span>
+            </label>
+            <label>
+                <input type="checkbox" name="passions[]" value="sport" />
+                <span>Sport</span>
+            </label>
+            <label>
+                <input type="checkbox" name="passions[]" value="lecture" />
+                <span>Lecture</span>
+            </label>
+        </p>
+
+        <!-- Bouton de validation -->
+        <div class="center-align">
+            <button class="btn waves-effect waves-light blue" type="submit">Valider</button>
+        </div>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer pink lighten-3">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="index.html" class="white-text">Accueil</a></li>
+            <li><a href="index.html" class="white-text">Inscription</a></li>
+            <li><a href="index.html" class="white-text">Connexion</a></li>
+            <li><a href="index.html" class="white-text">Rechercher</a></li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center-align">
+            © 2023 Nad
+        </div>
+    </div>
+</footer>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

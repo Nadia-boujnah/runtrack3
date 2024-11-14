@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Header et Cartes</title>
+    <!-- Materialize CSS version 1.0.0 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header avec logo et liens de navigation -->
+<header>
+    <nav class="nav-wrapper teal lighten-2">
+        <div class="container">
+            <a href="#!" class="brand-logo">NAD</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#!">Accueil</a></li>
+                <li><a href="#!">Services</a></li>
+                <li><a href="#!">À Propos</a></li>
+                <li><a href="#!">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- Body avec des cartes de différentes tailles -->
+<main class="container">
+    <div class="row">
+        <!-- Première carte : petite taille avec une image de lapin-->
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="lapin.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p>Ceci est une petite carte avec une image de lapin.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deuxième carte : taille moyenne avec une image de chevre-->
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="chevrejpg.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p>Ceci est une carte de taille moyenne avec une image de chevre.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Troisième carte : grande taille avec une image de alpaga -->
+        <div class="col s12 m8">
+            <div class="card">
+                <div class="card-image">
+                    <img src="alpaga.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <p>Ceci est une grande carte avec une image de alpaga.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
